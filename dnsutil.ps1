@@ -4,7 +4,7 @@
   Write-Output "您的运营商是: $ispName"
   $urls = @("http://www.163.com/", "http://www.qq.com/", "http://www.sohu.com/",
              "http://www.sina.com.cn/", "http://www.baidu.com/")
-  $results = @{'URL' = '延迟 (ms)'}
+  $results = @{}
   foreach ($url in $urls) {
     try {
       $startTime = Get-Date
